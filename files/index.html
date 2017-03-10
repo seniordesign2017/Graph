@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exosite Device Sensor Example</title>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-static-top navbar-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <div class="navbar-left">
+          <a class="navbar-brand" href="/"><img src="assets/exosite-logo.png" id="logo"></a>
+        </div>
+        <div class="navbar-text navbar-left text-uppercase">
+          <strong>Device Sensor Example</strong>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="nav-collapse">
+        <ul class="nav navbar-nav"></ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="https://support.exosite.com">Support</a>
+          </li>
+          <li>
+            <a href="https://community.exosite.com" target="_blank">Developer Forum</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="col-sm-4">
+      <h1>Device Sensor Example</h1>
+      <div class="well">
+        <p>Welcome to the Device Sensor Example!</p>
+        <p>
+          This is a simple demonstration to provide access to devices associated
+          with a basic solution while exercising all the available endpoints.
+          Begin by first creating a <a href="https://www.exosite.io/business/products">Product</a>
+          followed by one or more devices. After devices are created and activated you will see
+          information about each device in the "Available Devices" section.
+        </p>
+        <p>This example is intended to be minimal with only a few endpoints and rendering requirements.</p>
+        <p>Information about the available API endpoints is accessible <a href="/docs">here</a>.</p>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <h2>Available Devices</h2>
+      <div class="devices"></div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="assets/bootstrap.min.js"></script>
+  <script src="assets/device_sensor.js"></script>
+</body>
+</html>

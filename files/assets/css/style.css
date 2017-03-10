@@ -1,0 +1,21 @@
+@charset "UTF-8";
+body .navbar-top .navbar-brand > img {
+    height: 28px;
+    margin-top: -3px;
+}
+.devices {
+  margin-left: 20px;
+}
+
+.device {
+  margin-bottom: 10px;
+}
+
+.dataport {
+  padding-left: 36px;
+  display: flex;
+}
+
+.dataport_key {
+  padding-right: 15px;
+}
