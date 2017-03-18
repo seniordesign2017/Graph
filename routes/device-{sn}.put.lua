@@ -1,5 +1,5 @@
---#ENDPOINT POST /sensor/{sn}
--- Write to one or more resources of sensor with serial number {sn}
+--#ENDPOINT PUT /device/{sn}
+-- Write to one or more sensors of device with serial number {sn}
 -- Expects JSON object containing one or more properties depending on
 -- the device.
 -- E.g. {"temperature": 10.0}

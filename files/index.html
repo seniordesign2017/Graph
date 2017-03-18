@@ -43,18 +43,44 @@
         <p>Welcome to the Device Sensor Example!</p>
         <p>
           This is a simple demonstration to provide access to devices associated
-          with a basic solution while exercising all the available endpoints.
-          Begin by first creating a <a href="https://www.exosite.io/business/products">Product</a>
-          followed by one or more devices. After devices are created and activated you will see
-          information about each device in the "Available Devices" section.
+          with a basic solution while exercising all available API endpoints.
         </p>
-        <p>This example is intended to be minimal with only a few endpoints and rendering requirements.</p>
+        <p>
+          Begin by first creating a <a href="https://www.exosite.io/business/products">Product</a>
+          and associate it with the solution.  After a product is defined, create and <a href="http://docs.exosite.com/reference/products/device-api/http/#activate">activate</a> one or more devices.  Devices can be added under the "Devices" tab of your <a href="https://www.exosite.io/business/products">product configuration</a>.</p><p>Information about each device is displayed in the "<strong>Available Devices</strong>" section.
+        </p>
+        <p>A <a href="../specs/resources.yaml">sample product spec file</a> is included with this example.  The spec file can optionally be used for creating a new product and associating new devices.  The spec defines a device with these sensors (dataports):</p>
+        <ul>
+          <li>state</li>
+          <li>temperature</li>
+          <li>humidity</li>
+        </ul>
+        <p>This solution example is intended to be minimal with only a few endpoints and rendering requirements.</p>
         <p>Information about the available API endpoints is accessible <a href="/docs">here</a>.</p>
       </div>
     </div>
     <div class="col-sm-8">
       <h2>Available Devices</h2>
       <div class="devices"></div>
+    </div>
+  </div>
+  <div class="modal fade" id="deviceCreateModal" tabindex="-1" role="dialog" aria-labelledby="deviceCreateModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deviceCreateModalLabel">Create a new device</h5>
+        </div>
+        <div class="modal-body">
+          <div class="col-10">
+            <label for="device-save-sn" class="col-2 col-form-label">Serial Number</label>
+            <input id="device-save-sn" class="form-control" type="text" name="device-save-sn"></input>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="device-save-cancel" type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button id="device-save" type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

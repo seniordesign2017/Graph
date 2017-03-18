@@ -70,6 +70,28 @@ end
 
 ---
 -- Write value to device alias
+util.device_create = function (sn)
+  local pid = util.get_product_id()
+
+  if pid == nil then
+    local response = {}
+    response.code = 500
+    response.message = "No Product ID associated with Solution."
+    return response
+  end
+
+  local device = {pid = pid}
+  -- save to keystore
+  util.kv_write(sn, device)
+
+  return Device.create({
+    pid = pid,
+    ["device_sn"]=sn
+  })
+end
+
+---
+-- Write value to device alias
 util.device_write = function (sn, alias, value)
   local pid = util.get_product_id()
 
@@ -82,7 +104,7 @@ util.device_write = function (sn, alias, value)
 
   local device = util.kv_read(sn)
   if device == nil then
-    device = {}
+    device = {pid = pid}
   end
   device[alias] = value
 
