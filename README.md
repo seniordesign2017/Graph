@@ -31,4 +31,4 @@ murano assign set
 ```
 
 Navigate to your [solution](https://www.exosite.io/business/solutions) web application at an address similar to:
-https://<solution-name>.apps.exosite.io
+https://solution.apps.exosite.io
