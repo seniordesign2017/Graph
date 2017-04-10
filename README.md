@@ -8,7 +8,7 @@ This is a simple demonstration to provide access to devices associated with a ba
 
 ## Using This Example
 
-Clone this [repository](https://github.com/exosite/device-sensor-example).
+Clone this [repository](https://github.com/exosite/device-sensor-quickstart.git).
 
 ```sh
 git clone git@github.com:exosite/device-sensor-example.git
