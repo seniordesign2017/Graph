@@ -15,9 +15,9 @@ git clone git@github.com:exosite/device-sensor-example.git
 cd device-sensor-example
 ```
 
-To deploy this application, first [create a solution](/reference/ui/create-solution/) in [Exosite Murano](https://www.exosite.io/business/solutions). Then [create a Product](/reference/ui/create-product/) in the [Exosite Murano](https://www.exosite.io/business/products).
+To deploy this application, first [create a solution](http://docs.exosite.com/reference/ui/create-solution/) in [Exosite Murano](https://www.exosite.io/business/solutions). Then [create a Product](http://docs.exosite.com/reference/ui/create-product/) in the [Exosite Murano](https://www.exosite.io/business/products).
 
-Install the [murano command line tool](/development/tools/murano-cli/). Then initialize the project with your solution id and product id using the following commands (where XXXXXX is your respective identifier):
+Install the [murano command line tool](http://docs.exosite.com/development/tools/murano-cli/). Then initialize the project with your solution id and product id using the following commands (where XXXXXX is your respective identifier):
 
 ```sh 
 murano config business.id XXXXXX
