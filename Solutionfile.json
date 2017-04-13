@@ -1,7 +1,6 @@
 {
   "default_page": "index.html",
-  "file_dir": "assets",
-  "custom_api": "api_routes.lua",
+  "file_dir": "files",
   "event_handler": {
     "device": {
       "datapoint": "service_handlers/product.lua"
