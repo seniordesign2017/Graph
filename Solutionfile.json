@@ -1,6 +1,9 @@
 {
   "default_page": "index.html",
   "file_dir": "files",
+  "modules": {
+    "util": "modules/util.lua"
+  },
   "event_handler": {
     "device": {
       "datapoint": "service_handlers/product.lua"
