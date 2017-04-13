@@ -3,6 +3,10 @@ resources:
 - alias: state
   format: string
 - alias: temperature
-  format: float
-- alias: humidity
-  format: float
+  format: integer
+- alias: flow
+  format: integer
+- alias: pressure
+  format: integer
+- alias: uptime
+  format: integer
