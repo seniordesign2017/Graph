@@ -1,0 +1,8 @@
+---
+resources:
+- alias: state
+  format: string
+- alias: temperature
+  format: float
+- alias: humidity
+  format: float
