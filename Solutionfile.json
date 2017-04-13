@@ -2,12 +2,21 @@
   "default_page": "index.html",
   "file_dir": "files",
   "modules": {
-    "util": "modules/util.lua"
+    "auth": "modules/util.lua"
   },
-  "event_handler": {
+  "eventhandlers": {
     "device": {
-      "datapoint": "service_handlers/product.lua"
-    }
+      "datapoint": "eventhandlers/product.lua"
+    },
+    "timer": {
+      "timer": "eventhandlers/timer_timer.lua"
+    },
+    "user": {
+        "user": "eventhandlers/user_account.lua"
+      },
+    "deviceData": {
+        "data": "eventhandlers/device_datapoint.lua"
+      }
   },
   "version": "0.2.0",
   "cors": {"origin": ["http://localhost:*"]}
