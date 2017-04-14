@@ -60,8 +60,11 @@
       </div>
     </div>
     <div class="col-sm-8">
-      <h2>Available Devices</h2>
-      <div class="devices"></div>
+      <div id="content">
+    <h1 >Device Identifier: <span id="currentdevice"></span></h1>
+    <div class="demo-container">
+      <div id="placeholder" class="demo-placeholder"></div>
+    </div>
     </div>
   </div>
   <div class="modal fade" id="deviceCreateModal" tabindex="-1" role="dialog" aria-labelledby="deviceCreateModalLabel" aria-hidden="true">
@@ -73,7 +76,6 @@
         <div class="modal-body">
           <div class="col-10">
             <label for="device-save-sn" class="col-2 col-form-label">Serial Number</label>
-            <input id="device-save-sn" class="form-control" type="text" name="device-save-sn"></input>
           </div>
         </div>
         <div class="modal-footer">
@@ -82,9 +84,9 @@
         </div>
       </div>
     </div>
-  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="assets/bootstrap.min.js"></script>
   <script src="assets/device_sensor.js"></script>
+  <script src="assets/graph.js"></script>
 </body>
 </html>
